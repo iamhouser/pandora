@@ -19,7 +19,7 @@ const Navigation = () => {
 
                     <Navbar.Content hideIn='xs' variant="highlight">
                         <Navbar.Link href='#' isActive >My projects</Navbar.Link>
-                        <Navbar.Link href='https://github.com/iamhouser' target="_blank">Source</Navbar.Link>
+                        <Navbar.Link href='https://github.com/iamhouser/pandora' target="_blank">Source</Navbar.Link>
                         <Navbar.Link href='#'>Donate</Navbar.Link>
     
                     </Navbar.Content>

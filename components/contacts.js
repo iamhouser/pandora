@@ -4,14 +4,15 @@ import { FaTelegram } from 'react-icons/fa'
 
 const ContactItem = ({icon, link, text}) => {
     return(
-        <Grid.Container alignItems="center" css={{ p: 2 }}>
-            <Avatar squared icon={icon}/>
+
+        <Grid>
             <Grid css={{ p: 5 }}>
-                <Link href={link} isExternal>
+            <Avatar squared icon={icon} style={{display:"inline-block"}}/>
+                <Link css={{p: 5}} href={link} target="_blank" isExternal>
                     {text}
                 </Link>
             </Grid>
-        </Grid.Container>
+        </Grid> 
     )
 }
 
@@ -21,13 +22,19 @@ const Contacts = () => {
 
 
     return (
-        <Grid.Container >
-             <ContactItem icon link="https://t.me/e_domnin" text="Telegram"></ContactItem>
+        <Grid.Container justify="space-around">
+            <Grid>
+                <ContactItem icon link="https://t.me/e_domnin" text="Telegram" ></ContactItem>
 
-             <ContactItem icon link="https://telegram.org" text="Facebook"></ContactItem>
+                <ContactItem icon link="https://telegram.org" text="Facebook"></ContactItem>
 
-             <ContactItem icon link="https://telegram.org" text="Linkedin"></ContactItem>
+                <ContactItem icon link="https://linkedin.com" text="Linkedin"></ContactItem>
+            </Grid>
+            <Grid>
+                <ContactItem icon link="https://instagram.com" text="Instagram"></ContactItem>
 
+                <ContactItem icon link="https://codewars.com" text="Codewars"></ContactItem>
+             </Grid>
         </Grid.Container>
     )
 

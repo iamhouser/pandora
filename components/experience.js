@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid, Table, Text, Spacer } from "@nextui-org/react";
+import ResumeButton from "./resumeButton";
 
 
 
@@ -8,6 +9,14 @@ export default function Experience() {
     return(
 
         <Grid.Container>
+            <Grid.Container justify="space-between" css={{alignItems:"center"}}>
+                <Grid>
+                <Text h2 size={20}>Work Experience</Text>
+                </Grid>
+                <Grid>
+                    <ResumeButton/>
+                </Grid>
+            </Grid.Container>
             <Grid style={{width:"100%"}} >
                 <Table>
                     <Table.Header>
