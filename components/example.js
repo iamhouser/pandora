@@ -11,7 +11,7 @@ export default function Example () {
             </Grid.Container>
 
             <Grid>
-                <Text>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</Text>
+                <Text>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&aposs standard dummy text ever since the 1500s</Text>
             </Grid>
             <Spacer y={1}/>
             <Grid.Container justify="center">
