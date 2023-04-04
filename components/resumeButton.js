@@ -1,8 +1,12 @@
 import React from "react";
 import { Button, Grid, Badge } from "@nextui-org/react";
 
+const downloadFile = () => {
+
+}
+
 export default function ResumeButton () {
     return (
-        <Button size={"sm"} auto>Download .pdf</Button>
+        <Button size={"sm"} shadow auto >Download .pdf</Button>
     )
 }
