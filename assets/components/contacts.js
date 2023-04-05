@@ -34,20 +34,28 @@ const Contacts = () => {
 
 
     return (
+
         <Grid.Container justify="space-around">
+
+            <Grid.Container>
+                <Text h2 size={20}>Contacts</Text>
+            </Grid.Container>
+
             <Grid>
                 <ContactItem icon={<FaTelegramPlane size={25}/>} link="https://t.me/e_domnin" text="Telegram" ></ContactItem>
 
-                <ContactItem icon={<FaFacebook  size={25}/>} link="https://telegram.org" text="Facebook"></ContactItem>
+                <ContactItem icon={<FaFacebook  size={25}/>} link="#" text="Facebook"></ContactItem>
 
                 <ContactItem icon={<FaLinkedinIn  size={25}/>} link="https://linkedin.com" text="Linkedin"></ContactItem>
             </Grid>
             <Grid>
-                <ContactItem icon={<FaInstagram  size={25}/>}  link="https://instagram.com" text="Instagram"></ContactItem>
+                <ContactItem icon={<FaInstagram  size={25}/>}  link="https://instagram.com/iamhouser" text="Instagram"></ContactItem>
 
-                <ContactItem icon={<FaCode size={25}/>} link="https://codewars.com" text="Codewars"></ContactItem>
+                <ContactItem icon={<FaCode size={25}/>} link="https://www.codewars.com/users/housers" text="Codewars"></ContactItem>
              </Grid>
         </Grid.Container>
+
+
     )
 
 }

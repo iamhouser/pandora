@@ -16,33 +16,26 @@ import * as React from 'react';
 
 
 import { 
-  Textarea, 
   Text,
   Container,
-  Grid,
   Spacer,
-  Navbar,
   Image,
-  Button,
-  Loading,
-  createTheme
+  CreateTheme
 } from '@nextui-org/react';
 
-import Navigation from '../../components/navbar';
-import Contacts from '../../components/contacts';
-import Stack from '../../components/stack';
-import Bio from '../../components/bio';
-import Learning from '../../components/learning';
-import Footer from '../../components/footer';
-import Name from '../../components/about';
-import Experience from '../../components/experience';
-import Example from '../../components/example';
+import Navigation from '../../assets/components/navbar';
+import Contacts from '../../assets/components/contacts';
+import Stack from '../../assets/components/stack';
+import Bio from '../../assets/components/bio';
+import Learning from '../../assets/components/learning';
+import Footer from '../../assets/components/footer';
+import Name from '../../assets/components/about';
+import Experience from '../../assets/components/experience';
+import Example from '../../assets/components/example';
 
 export default function App() {
 
-  const darkTheme = createTheme({
-    type: 'dark',
-  });
+
   
   return (
     
@@ -51,22 +44,17 @@ export default function App() {
     <Navigation/>
 
     <Image
-      src='/images/cover.jpg'
+      src='images/cover.jpg'
       alt='Defaul image'
       css={{mw:"100%"}}
       showSkeleton
     />
 
-    <Text 
-    blockquote
-    css= {{textAlign:"center"}}
-    >
-      Hi! I am QA Engineer from Russia 🇷🇺
-    </Text>
+    <Text blockquote css= {{textAlign:"center"}}>Hi! I am QA Engineer from Russia 🇷🇺 </Text>
 
     <Name/>
-
     <Spacer y={1}/>
+
     <Bio/>
     <Spacer y={1}/>
     
@@ -79,18 +67,11 @@ export default function App() {
     <Spacer y={1}/>
 
     <Example/>
-    <Text
-      h2
-      size={20}
-    >
-      Contacts
-    </Text>
 
     <Contacts/>
-    <Spacer/>
     <Spacer y={1}/>
+
     <Footer/>
-    
     <Spacer y={1}/>
 
   </Container>

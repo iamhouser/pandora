@@ -8,7 +8,7 @@ export default function Theme() {
         <Switch
             shadow
             color="primary"
-            checked={theme}
+
         />
     )
 }
