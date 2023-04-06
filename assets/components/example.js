@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Text, Button, Tooltip, Spacer } from "@nextui-org/react"
+import { Grid, Text, Button, Tooltip, Spacer, Link } from "@nextui-org/react"
 
 export default function Example () {
     return (
@@ -16,7 +16,10 @@ export default function Example () {
             <Spacer y={1}/>
             <Grid.Container justify="center">
                 <Grid>
-                        <Button color="gradient" size="xl" shadow auto animated>Documentation</Button>
+                <Link href="/doc">
+                        <Button color="gradient" size="xl" shadow auto animated>Documentation
+                        </Button>
+                </Link>
                 </Grid>
             </Grid.Container>
             <Spacer y={1}/>

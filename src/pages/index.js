@@ -32,6 +32,8 @@ import Footer from '../../assets/components/footer';
 import Name from '../../assets/components/about';
 import Experience from '../../assets/components/experience';
 import Example from '../../assets/components/example';
+import { ImageLoader } from '../../assets/components/imageLoader';
+
 
 export default function App() {
 
@@ -49,6 +51,12 @@ export default function App() {
       css={{mw:"100%"}}
       showSkeleton
     />
+
+    {/* <ImageLoader
+      src='images/cover.jpg'
+      alt='test'
+      css={{mw:"100%"}}
+    /> */}
 
     <Text blockquote css= {{textAlign:"center"}}>Hi! I am QA Engineer from Russia 🇷🇺 </Text>
 
