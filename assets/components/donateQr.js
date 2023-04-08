@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Modal, Image, Text, Button, Grid, Spacer } from "@nextui-org/react";
+import { HeartIcon } from "./HeartIcon";
 
 
 export default function ModalDonate() {
@@ -10,7 +11,7 @@ export default function ModalDonate() {
     return (
         <Grid.Container>
             <Grid>
-                <Button auto color={"primary"} onPress={handler}>🔥</Button>
+                <Button auto color={"warning"} onPress={handler}  icon={<HeartIcon fill="currentColor" filled />}></Button>
                 <Modal open={visible} onClose={closeHandler} closeButton>
                     <Modal.Header>
                         <Text h3 b> You can support me here!</Text>

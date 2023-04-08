@@ -55,7 +55,7 @@ const Learning = () => {
 
             <LearnItem 
                 title="The EF Standard English Test" 
-                imageUrl="#" 
+                imageUrl="/images/download.png" 
                 webUrl="englishfirst.com" 
                 description="Completed English testing for non-English speakers"
                 confirmUrl="https://efset.org/cert/2Q736s" 
@@ -64,9 +64,9 @@ const Learning = () => {
 
             <LearnItem
                 title={"Moscow State University of Water Transport"}
-                imageUrl={"#"}
+                imageUrl={"/images/msawt.jpeg"}
                 webUrl={"msawt.ru"}
-                description={"Lorem Ipsum"}
+                description={"Department of navigation and fleet operation"}
                 confirmUrl={"https://msawt.ru"}
                 textForUrl={"Studied from 2013 - 2015"}
             />

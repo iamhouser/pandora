@@ -18,7 +18,7 @@ const Name = () => {
             <Avatar
                     // src="/images/me.png"
                     css={{size:"100px"}}
-                    text="ED"
+                    src="/images/me.jpg"
                     textColor="white"
                     bordered
                     color="gradient"

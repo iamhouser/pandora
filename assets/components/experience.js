@@ -39,9 +39,6 @@ export default function Experience() {
                             <Text>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Text>
                             <Text>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Text>
                             <Text style={{wordBreak:"break-all"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Text>
-                            <Text></Text>
-                            <Text></Text>
-                            <Text></Text>
                         </Table.Cell>
                     </Table.Row>
 
