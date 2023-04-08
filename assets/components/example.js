@@ -2,6 +2,9 @@ import React from "react";
 import { Grid, Text, Button, Tooltip, Spacer, Link } from "@nextui-org/react"
 
 export default function Example () {
+    const HandleNavigateToDocs = () => {
+        router.push('/doc')
+    }
     return (
         <Grid.Container>
             <Grid.Container>
@@ -16,7 +19,7 @@ export default function Example () {
             <Spacer y={1}/>
             <Grid.Container justify="center">
                 <Grid>
-                <Link href="/doc">
+                <Link href="/doc" onClick={HandleNavigateToDocs}>
                         <Button color="gradient" size="xl" shadow auto animated>Documentation
                         </Button>
                 </Link>

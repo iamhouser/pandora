@@ -4,7 +4,7 @@ import { Grid, Card, Text, Link } from "@nextui-org/react";
 export const LearnItem = ({title, imageUrl, webUrl, description, confirmUrl, textForUrl}) => {
     return (
         <Grid>
-                <Card css={{p:"$6", mw:"400px"}} >
+                <Card css={{p:"$6", mw:"400px", height:"auto"}} >
                     <Card.Header>
                         <img
                             src={imageUrl}
@@ -43,7 +43,7 @@ const Learning = () => {
 
     return (
         
-        <Grid.Container gap={2} justify="center">
+        <Grid.Container gap={2} justify="center" >
 
             <Grid.Container>
 
@@ -52,24 +52,28 @@ const Learning = () => {
                 </Grid>
 
             </Grid.Container>
+        
+            <Grid.Container justify="center" gap={2} css={{height:"auto",}}>
+                <LearnItem 
+                    title="The EF Standard English Test" 
+                    imageUrl="/images/download.png" 
+                    webUrl="englishfirst.com" 
+                    description="Completed English testing for non-English speakers"
+                    confirmUrl="https://efset.org/cert/2Q736s" 
+                    textForUrl="Check the certificate"
+                />
 
-            <LearnItem 
-                title="The EF Standard English Test" 
-                imageUrl="/images/download.png" 
-                webUrl="englishfirst.com" 
-                description="Completed English testing for non-English speakers"
-                confirmUrl="https://efset.org/cert/2Q736s" 
-                textForUrl="Check the certificate"
-            />
 
-            <LearnItem
-                title={"Moscow State University of Water Transport"}
-                imageUrl={"/images/msawt.jpeg"}
-                webUrl={"msawt.ru"}
-                description={"Department of navigation and fleet operation"}
-                confirmUrl={"https://msawt.ru"}
-                textForUrl={"Studied from 2013 - 2015"}
-            />
+
+                <LearnItem
+                    title={"Moscow State University of Water Transport"}
+                    imageUrl={"/images/msawt.jpeg"}
+                    webUrl={"msawt.ru"}
+                    description={"Department of navigation and fleet operation"}
+                    confirmUrl={"https://msawt.ru"}
+                    textForUrl={"Studied from 2013 - 2015"}
+                />
+            </Grid.Container>
             
         </Grid.Container>
 

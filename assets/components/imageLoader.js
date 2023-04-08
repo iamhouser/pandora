@@ -2,8 +2,8 @@ import { React,  useState } from "react";
 import { Grid, Image, Loading } from "@nextui-org/react";
 
 export const ImageLoader = () => {
-    const [isLoading, setIsLoading] = useState(true)
-    const Handler = () => setIsLoading(false)
+    const [isLoading, setIsLoading] = useState(false)
+    const HandleLoad = () => setIsLoading(true)
 
     return (
         <Grid.Container justify="center">
@@ -13,8 +13,8 @@ export const ImageLoader = () => {
                         <Loading type="gradient"/>
                     ) : (
                         <Image
-                        src="images/cover.jpg"
-                        onLoad={Handler}
+                        src="/images/cover.jpg"
+                        onLoad= { HandleLoad }
                         showSkeleton
                     />
                     )
