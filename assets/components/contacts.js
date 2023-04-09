@@ -5,7 +5,7 @@ import {
     FaFacebook, 
     FaInstagram, 
     FaCode, 
-    FaLinkedinIn} from "react-icons/fa"
+    FaLinkedinIn, FaGithub} from "react-icons/fa"
     
 const ContactItem = ({icon, link, text, src, color}) => {
     return(
@@ -50,6 +50,7 @@ const Contacts = () => {
             <Grid>
                 <ContactItem icon={<FaInstagram  size={25}/>}  link="https://instagram.com/iamhouser" text="Instagram"></ContactItem>
                 <ContactItem icon={<FaCode size={25}/>} link="https://www.codewars.com/users/housers" text="Codewars"></ContactItem>
+                <ContactItem icon={<FaGithub size={25}/>} link="https://github.com/iamhouser" text="Github"></ContactItem>
              </Grid>
         </Grid.Container>
 
