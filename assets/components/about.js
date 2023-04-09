@@ -11,7 +11,7 @@ const Name = () => {
                 >
                     Evgeny Domnin
                 </Text>
-                <Text>Quality Assurance Engineer</Text>
+                <Text>Manual QA Tester</Text>
             </Grid>
 
             <Grid>

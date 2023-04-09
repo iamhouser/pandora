@@ -20,10 +20,10 @@ export default function Experience() {
             <Grid style={{width:"100%"}} >
                 <Table>
                     <Table.Header>
-                        <Table.Column width="30%">Period</Table.Column>
-                        <Table.Column width="20%">Place</Table.Column>
-                        <Table.Column width="15%">Position</Table.Column>
-                        <Table.Column>Requirements</Table.Column>
+                        <Table.Column width="25%">Period</Table.Column>
+                        <Table.Column width="15%">Place</Table.Column>
+                        <Table.Column width="25%">Position</Table.Column>
+                        <Table.Column width={"50%"}>Requirements</Table.Column>
 
                     </Table.Header>
                     <Table.Body>
@@ -34,11 +34,14 @@ export default function Experience() {
                         <Text color="primary">1 year 8 months <Text span color="success">(now)</Text></Text>
                         </Table.Cell>
                         <Table.Cell>PUSK LTD</Table.Cell>
-                        <Table.Cell>Tester</Table.Cell>
+                        <Table.Cell>Manual QA Tester</Table.Cell>
                         <Table.Cell css={{wordWrap:"break-word", whiteSpace:"pre-line"}}>
-                            <Text>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Text>
-                            <Text>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Text>
-                            <Text style={{wordBreak:"break-all"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Text>
+                            <Text> - Test Websites and Web Applications (Vue3, React)</Text>
+                            <Text> - Identified and documented bugs in Jira, JetBrains Space</Text>
+                            <Text> - Created a test documentation for projects (test cases, checklists, bug reports)</Text>
+                            <Text> - Performed tests for REST API via Postman/Insomnia</Text>
+                            <Text> - Performed tests on the Client side: UI, Localization, Functionality, Loading, and Usability</Text>
+                            <Text> - Performed a Security tests</Text>
                         </Table.Cell>
                     </Table.Row>
 

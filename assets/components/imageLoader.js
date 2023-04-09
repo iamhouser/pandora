@@ -10,12 +10,12 @@ export const ImageLoader = () => {
             <Grid>
                 {
                     isLoading ? (
-                        <Loading type="gradient"/>
+                        <Loading />
                     ) : (
                         <Image
                         src="/images/cover.jpg"
                         onLoad= { HandleLoad }
-                        showSkeleton
+                        
                     />
                     )
                 }

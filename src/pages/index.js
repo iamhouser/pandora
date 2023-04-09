@@ -45,18 +45,16 @@ export default function App() {
 
     <Navigation/>
 
-    {/* <Image
+    <Image
       src='images/cover.jpg'
       alt='Defaul image'
       css={{mw:"100%"}}
       showSkeleton
-    /> */}
-
-    <ImageLoader
-      src='images/cover.jpg'
-      alt='test'
-      css={{mw:"100%"}}
     />
+
+    {/* <ImageLoader
+
+    /> */}
 
     <Text blockquote css= {{textAlign:"center"}}>Hi! I am QA Engineer from Russia 🇷🇺 </Text>
 
