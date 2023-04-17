@@ -25,10 +25,10 @@ function randomNumber(min, max) {
 export default function UserCount() {
     const time = new Date()
     const hours = time.getHours()
-    let users = 2
+    let users =  randomNumber(1, 15)
 
     if ( hours >= 15 ) {
-        users = 9
+        users = randomNumber(1, 15)
 
         return (
             <Grid.Container>

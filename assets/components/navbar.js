@@ -1,4 +1,4 @@
-import { Navbar, Text, Switch, Button, Grid} from "@nextui-org/react";
+import { Navbar, Text, Switch, Button, Grid, Link} from "@nextui-org/react";
 import React from "react";
 import Theme from "./theme";
 import { useRouter } from "next/router";
@@ -20,7 +20,7 @@ const Navigation = () => {
             
                 <Navbar variant={variant} >
                     <Navbar.Brand>
-                        <Text b color='inherit' hideIn='xs'> Houser </Text>
+                        <Text b color='inherit' hideIn='xs'> <Link href="/" onClick={HandleNavigateToHome}>Houser</Link> </Text>
                     </Navbar.Brand>
 
                     <Navbar.Content hideIn='xs' variant="highlight" style={{justifyContent:"center"}}>

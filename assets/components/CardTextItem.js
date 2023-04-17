@@ -1,12 +1,12 @@
 import React from "react";
-import { Card, Grid, Spacer, Text } from "@nextui-org/react";
+import { Card, Grid, Spacer, Text, Link } from "@nextui-org/react";
 
 export default function CardTextItem() {
     return(
         <Grid.Container >
             <Grid style={{width:"100%"}}>
                 <Spacer/>
-                <Text h3 b> Test case for login</Text>
+                <Text h3 b> <Link href="/doc#case1"></Link>Test case for login </Text>
                 <Spacer/>
                 <Card >
                     <Card.Header>
@@ -16,13 +16,21 @@ export default function CardTextItem() {
                     <Card.Body>
                         <Text b>Steps for reproduce:</Text>
                         <Spacer/>
-                        <Text>&emsp;1. hello!</Text>
-                        <Text>&emsp;2. hello!</Text>
-                        <Text>&emsp;3. hello!</Text>
+                        <Text className="TabCase">
+                            <ol>
+                                <li>Test</li>
+                                <li>Test</li>
+                                <li>Test</li>
+                                <li>Test</li>
+                                <li>Test</li>
+                                <li>Test</li>
+                                <li>Test</li>
+                            </ol>
+                        </Text>
                         <Spacer/>
                         <Text b>Expected Result:</Text>
                         <Spacer/>
-                        <Text>&emsp;Idk to be honest</Text>
+                        <Text className="TabCase">Idk to be honest</Text>
                     </Card.Body>
                     <Card.Footer>
                         <Text>me, just me</Text>
