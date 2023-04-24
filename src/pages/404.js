@@ -15,25 +15,28 @@ export default function ErrorPage() {
     }
 
     return (
-        <Container style={{maxWidth:"800px", margin:"auto"}}>
-            <Grid.Container style={{display:"flex", justifyContent:"center", alignItems:"center", height:"100hv"}}>
-                <Grid style={{alignItems:"center", paddingTop:"15%"}} justify="center">
+        <Container>
+            <Grid.Container style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "0 auto", maxWidth: "900px", paddingTop:"10%" }}>
+                <Grid justify="center">
                     <Image src="/images/michael.gif"/>
-                    <Spacer y={2}/>
+
                 </Grid>
-                <Grid  style={{alignItems:"center"}} justify="center">
+                <Spacer/>
+                <Grid>
                     <Text h1>Oops, we dont have such page</Text>
-                    <Spacer y={2}/>
+
                 </Grid>
-        
-                <Button onPress={HandleNavigateToHome} shadow>Home</Button>
+                <Spacer/>
+                <Grid >
+                    <Button onPress={HandleNavigateToHome} shadow>Home</Button>
+                </Grid>
                 
             </Grid.Container>
 
             <Spacer y={4}/>
 
             <Footer/>
-            <Spacer y={1}/>
+
         </Container>
     )
 }

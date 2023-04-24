@@ -16,14 +16,14 @@ const Navigation = () => {
     const [variant, setVariant] = React.useState("sticky");
     const [activeColor, setActiveColor] = React.useState("primary")
     return (
-        <Grid.Container >
+
             
                 <Navbar variant={variant} >
                     <Navbar.Brand>
-                        <Text b color='inherit' hideIn='xs'> <Link href="/" onClick={HandleNavigateToHome}>Houser</Link> </Text>
+                        <Link href="/" onClick={HandleNavigateToHome}>Houser</Link>
                     </Navbar.Brand>
 
-                    <Navbar.Content hideIn='xs' variant="highlight" style={{justifyContent:"center"}}>
+                    <Navbar.Content hideIn='xs' variant="highlight" >
                         <Navbar.Link href='/' isActive={router.pathname === '/'} onClick={HandleNavigateToHome}>Home</Navbar.Link>
                         <Navbar.Link href='/doc' isActive={router.pathname === '/doc'} onClick={HandleNavigateToDocs}>Docs</Navbar.Link>
                         <Navbar.Link href='https://github.com/iamhouser/pandora' target="_blank">Source</Navbar.Link>
@@ -33,11 +33,11 @@ const Navigation = () => {
                     <Navbar.Content >
                         <UserCount/>
                         <ModalDonate/>
-                        {/* <Theme/> */}
+
                     </Navbar.Content>
                 </Navbar>
 
-        </Grid.Container>
+
 
 
     )

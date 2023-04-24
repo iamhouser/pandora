@@ -4,7 +4,11 @@ import { Button } from "@nextui-org/react";
 
 export const downloadFile = async (fileName) => {
     const fileUrl = `public/${fileName}`
-    const response = await fetch(fileUrl);
+    const response = await fetch(fileUrl, {
+        headers: {
+            'Content-Type': 'text/plain, charset=utf-8'
+        }
+    });
     const blob = await response.blob()
 
     const link = document.createElement('a');
