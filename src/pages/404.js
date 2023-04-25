@@ -23,12 +23,12 @@ export default function ErrorPage() {
                 </Grid>
                 <Spacer/>
                 <Grid>
-                    <Text h1>Oops, we dont have such page</Text>
+                    <Text h1>The page you&apos;re looking for was not found</Text>
 
                 </Grid>
                 <Spacer/>
                 <Grid >
-                    <Button onPress={HandleNavigateToHome} shadow>Home</Button>
+                    <Button size="xl" onPress={HandleNavigateToHome} shadow>Home</Button>
                 </Grid>
                 
             </Grid.Container>

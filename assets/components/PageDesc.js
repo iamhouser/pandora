@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Grid, Image, Spacer } from "@nextui-org/react";
+import { Text, Grid, Image, Spacer, Card } from "@nextui-org/react";
 
 export default function PageDesc({text, src}) {
     return (
@@ -11,7 +11,7 @@ export default function PageDesc({text, src}) {
 
             <Grid>
                 <Text h2 b>What is it?</Text>
-                <Text>{text}</Text>
+                <Text size={20}>{text}</Text>
                 <Spacer y={1}/>
             </Grid>
         </Grid.Container>

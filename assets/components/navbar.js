@@ -18,7 +18,7 @@ const Navigation = () => {
     return (
 
             
-                <Navbar variant={variant} >
+                <Navbar variant={variant} style={{zIndex:"1000"}} >
                     <Navbar.Brand>
                         <Link href="/" onClick={HandleNavigateToHome}>Houser</Link>
                     </Navbar.Brand>

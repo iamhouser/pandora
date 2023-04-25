@@ -15,13 +15,23 @@ export default function Docs() {
             <Navigation/> 
             <PageDesc 
                 src={"/images/cover.jpg"}
-                text={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&aposs standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "}
+                text={"This is the test documentation that I created base on my working experience for this small website"}
             />
 
-            <CardTextItem/>
+            <CardTextItem
+                title = {"Donate Button Functionality Test Case"}
+                header = {"Ensuring Secure and Reliable Payment Processing"}
+                step1 = {"Go to https://pandorame.vercel.app"}
+                result = {""}
+            />
             <Spacer y={1}/>
 
-            <CardTextItem/>
+            <CardTextItem
+                title = {"Donate Button Functionality Test Case"}
+                header = {"Ensuring Secure and Reliable Payment Processing"}
+                step1 = {"Go to https://pandorame.vercel.app"}
+                result = {""}
+            />
             <Spacer y={1}/>
 
             <ChecklistItem/>

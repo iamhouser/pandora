@@ -14,13 +14,14 @@ export default function Example () {
             </Grid.Container>
 
             <Grid>
-                <Text>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&aposs standard dummy text ever since the 1500s</Text>
+                <Text> If you want to see a real examples how I am creating the test documentation, you can check these in the documentation Section. The documentation made with the example of this site, so feel free to explore! </Text>
             </Grid>
             <Spacer y={1}/>
             <Grid.Container justify="center">
                 <Grid>
                 <Link href="/doc" onClick={HandleNavigateToDocs}>
-                        <Button color="gradient" size="xl" shadow auto animated>Documentation
+                        <Button color="gradient" size="xl" shadow auto animated>
+                            Documentation
                         </Button>
                 </Link>
                 </Grid>

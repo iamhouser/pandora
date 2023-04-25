@@ -6,6 +6,21 @@ import ResumeButton from "./resumeButton";
 
 export default function Experience() {
 
+    const calculation = function(startMonth, startYear, endMonth, endYear) {
+
+        let year = (endYear - startYear)*12
+        let result = (year + (endMonth - startMonth))/12
+        let regexp = /\w+$/gm
+
+        if (result > 0) {
+            return (result.toFixed() + ' years and ' + String(Math.round(result * 10)/10).match(regexp) + ' months')
+        }
+
+        return (String(Math.round(result * 10)/10) + ' months')
+
+
+    }
+
     return(
 
         <Grid.Container>
@@ -20,6 +35,7 @@ export default function Experience() {
             <Grid style={{width:"100%"}} >
                 <Table>
                     <Table.Header>
+
                         <Table.Column width="25%">Period</Table.Column>
                         <Table.Column width="15%">Place</Table.Column>
                         <Table.Column width="25%">Position</Table.Column>
@@ -30,18 +46,20 @@ export default function Experience() {
 
                     <Table.Row >
                         <Table.Cell>
-                        2022-02 - 2023-08 {/*add dynamical calculation date */}
-                        <Text color="primary">1 year 8 months <Text span color="success">(now)</Text></Text>
+                        01.2022 - 03.2023
+                        <Text color="primary">{calculation(1, 2022, 3, 2023)} <Text span color="success">(now)</Text></Text>
                         </Table.Cell>
                         <Table.Cell>PUSK LTD</Table.Cell>
                         <Table.Cell>Manual QA Tester</Table.Cell>
                         <Table.Cell css={{wordWrap:"break-word", whiteSpace:"pre-line"}}>
+
                             <Text> - Test Websites and Web Applications (Vue3, React)</Text>
-                            <Text> - Identified and documented bugs in Jira, JetBrains Space</Text>
-                            <Text> - Created a test documentation for projects (test cases, checklists, bug reports)</Text>
-                            <Text> - Performed tests for REST API via Postman/Insomnia</Text>
+                            <Text> - Identified and documented 500+ bugs in Jira and JetBrains Space.</Text>
+                            <Text> - Create and maintain test documentation, including 200+  test cases, checklists and bug reports by using test design techniques.</Text>
+                            <Text> - Developed comprehensive test suites for REST API using Postman/Insomnia, resulting in 90% reduction in critical defects</Text>
                             <Text> - Performed tests on the Client side: UI, Localization, Functionality, Loading, and Usability</Text>
-                            <Text> - Performed a Security tests</Text>
+                            <Text> - Performed a Security tests, which help to discover a critical security vulnerability that allowed unauthorized access to sensitive user data</Text>
+
                         </Table.Cell>
                     </Table.Row>
 
