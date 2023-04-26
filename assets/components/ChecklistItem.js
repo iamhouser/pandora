@@ -3,7 +3,18 @@ import { Grid, Spacer, Table, Text, Textarea} from "@nextui-org/react";
 
 
 
-export default function ChecklistItem() {
+export default function ChecklistItem({steps = []}) {
+    const Listing = () => {
+        const result = steps.map((step, index) => 
+            <Table.Row key={index} >
+                    <Table.Cell css={{wordWrap:"break-word", whiteSpace:"pre-line"}}>{step}</Table.Cell>
+                    <Table.Cell><span style={{color:'#17C964', fontWeight:"bold"}}>Pass</span></Table.Cell>
+                    <Table.Cell css={{wordWrap:"break-word"}}><Textarea css={{width:"100%", alignItems:"center"}} placeholder="Type any comments"/> </Table.Cell>
+             </Table.Row>
+        )
+
+        return result
+    }
     return (
         <Grid.Container>
             <Grid>
@@ -14,26 +25,12 @@ export default function ChecklistItem() {
                 <Table >
                     <Table.Header>
                         <Table.Column width="20%">Procedure</Table.Column>
-                        <Table.Column width="10%"> Pass/Fail</Table.Column>
-                        <Table.Column width="40%">Comments</Table.Column>
+                        <Table.Column width="10%" css={{alignItems:"center"}}> Pass/Fail</Table.Column>
+                        <Table.Column width="20%">Comments</Table.Column>
                     </Table.Header>
 
                     <Table.Body>
-                        <Table.Row key={1} >
-                            <Table.Cell>Performs primary functionality and maintains stability</Table.Cell>
-                            <Table.Cell><span style={{color:'#17C964', fontWeight:"bold"}}>Pass</span></Table.Cell>
-                            <Table.Cell css={{wordWrap:"break-word"}}><Textarea css={{width:"100%"}} placeholder="Type any comments"/> </Table.Cell>
-                        </Table.Row>
-                        <Table.Row key={2}>
-                            <Table.Cell>Performs primary functionality </Table.Cell>
-                            <Table.Cell><span style={{color:'#17C964', fontWeight:"bold"}}>Pass</span></Table.Cell>
-                            <Table.Cell css={{wordWrap:"break-word"}}><Textarea css={{width:"100%"}} placeholder="Type any comments"/> </Table.Cell>
-                        </Table.Row>
-                        <Table.Row key={3}>
-                            <Table.Cell>Maintains stability</Table.Cell>
-                            <Table.Cell><span style={{color:'#F31260', fontWeight:"bold"}}>Fail</span></Table.Cell>
-                            <Table.Cell css={{wordWrap:"break-word"}}><Textarea css={{width:"100%"}} placeholder="Type any comments"/> </Table.Cell>
-                        </Table.Row>
+                        {Listing()}
                     </Table.Body>
                 </Table>
             </Grid>

@@ -23,7 +23,7 @@ const Navigation = () => {
                         <Link href="/" onClick={HandleNavigateToHome}>Houser</Link>
                     </Navbar.Brand>
 
-                    <Navbar.Content hideIn='xs' variant="highlight" >
+                    <Navbar.Content hideIn='xs' variant="highlight">
                         <Navbar.Link href='/' isActive={router.pathname === '/'} onClick={HandleNavigateToHome}>Home</Navbar.Link>
                         <Navbar.Link href='/doc' isActive={router.pathname === '/doc'} onClick={HandleNavigateToDocs}>Docs</Navbar.Link>
                         <Navbar.Link href='https://github.com/iamhouser/pandora' target="_blank">Source</Navbar.Link>

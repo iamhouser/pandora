@@ -1,7 +1,11 @@
 import React from "react";
 import { Card, Grid, Spacer, Text, Link } from "@nextui-org/react";
 
-export default function CardTextItem({title, header, step1, step2, result}) {
+export default function CardTextItem({title, header, steps = [], result}) {
+    const newList = () => {
+        const done = steps.map((step, index )=> <li key={index}>{step}</li>)
+        return <ol>{done}</ol>
+    }
     return(
         <Grid.Container >
             <Grid style={{width:"100%"}}>
@@ -17,15 +21,7 @@ export default function CardTextItem({title, header, step1, step2, result}) {
                         <Text b>Steps for reproduce:</Text>
                         <Spacer/>
                         <Text className="TabCase">
-                            <ol>
-                                <li>{step1}</li>
-                                <li>Test</li>
-                                <li>Test</li>
-                                <li>Test</li>
-                                <li>Test</li>
-                                <li>Test</li>
-                                <li>Test</li>
-                            </ol>
+                            {newList()}
                         </Text>
                         <Spacer/>
                         <Text b>Expected Result:</Text>
@@ -33,7 +29,7 @@ export default function CardTextItem({title, header, step1, step2, result}) {
                         <Text className="TabCase">{result}</Text>
                     </Card.Body>
                     <Card.Footer>
-                        <Text>me, just me</Text>
+                        <Text> <span style={{fontFamily:"monospace", fontSize:"15px"}}>#Functional Testing </span></Text>
                     </Card.Footer>
                 </Card>
             </Grid>
