@@ -1,9 +1,10 @@
-import { Navbar, Text, Switch, Button, Grid, Link} from "@nextui-org/react";
+import { Navbar, Text, Switch, Button, Grid, Link, Avatar} from "@nextui-org/react";
 import React from "react";
 import Theme from "./theme";
 import { useRouter } from "next/router";
 import ModalDonate from "./donateQr";
 import UserCount from "./UserCount";
+import { FaGithub } from "react-icons/fa";
 
 const Navigation = () => {
     const router = useRouter()
@@ -23,10 +24,21 @@ const Navigation = () => {
                         <Link href="/" onClick={HandleNavigateToHome}>Houser</Link>
                     </Navbar.Brand>
 
-                    <Navbar.Content hideIn='xs' variant="highlight">
+
+
+                    <Navbar.Content  variant="highlight" gap={"$0"} style={{justifyContent:"center"}}>
+                        <Navbar.Item>
                         <Navbar.Link href='/' isActive={router.pathname === '/'} onClick={HandleNavigateToHome}>Home</Navbar.Link>
+                        </Navbar.Item>
+
+                        <Navbar.Item>
                         <Navbar.Link href='/doc' isActive={router.pathname === '/doc'} onClick={HandleNavigateToDocs}>Docs</Navbar.Link>
-                        <Navbar.Link href='https://github.com/iamhouser/pandora' target="_blank">Source</Navbar.Link>
+                        </Navbar.Item>
+
+                        <Navbar.Item>
+                        <Navbar.Link href='https://github.com/iamhouser/pandora' target="_blank" ><FaGithub style={{width:"26px", height:"26px", paddingLeft:"0"}}/>Source</Navbar.Link>
+                        </Navbar.Item>
+
                     </Navbar.Content>
 
 
@@ -35,6 +47,9 @@ const Navigation = () => {
                         <ModalDonate/>
 
                     </Navbar.Content>
+
+
+
                 </Navbar>
 
 
