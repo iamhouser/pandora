@@ -3,7 +3,7 @@ import { Button } from "@nextui-org/react";
 
 
 export const downloadFile = async (fileName) => {
-    const fileUrl = `public/${fileName}`
+    const fileUrl = `/${fileName}`
     const response = await fetch(fileUrl, {
         headers: {
             'Content-Type': 'application/pdf, charset=utf-8',

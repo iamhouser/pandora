@@ -14,7 +14,7 @@ export default function Docs() {
 
             <Navigation/> 
             <PageDesc 
-                src={"/images/cover.jpg"}
+                src={"/images/mainPage.jpg"}
                 text={"This is the test documentation that I created base on my working experience for this small website"}
             />
 

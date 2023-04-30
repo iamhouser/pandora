@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {Suspense} from 'react'
 
 // // 1. import `NextUIProvider` component
 // import { NextUIProvider } from '@nextui-org/react';
@@ -12,7 +13,7 @@ import * as React from 'react';
     
 //   );
 // }
-
+import { Canvas } from '@react-three/fiber'
 
 
 import { 
@@ -33,6 +34,9 @@ import Name from '../../assets/components/about';
 import Experience from '../../assets/components/experience';
 import Example from '../../assets/components/example';
 import { ImageLoader } from '../../assets/components/imageLoader';
+import Model from '../../assets/components/3d';
+import { Environment } from '@react-three/drei'
+import Scene from '../../assets/components/3d';
 
 
 export default function App() {
@@ -46,11 +50,12 @@ export default function App() {
     <Navigation/>
 
     <Image
-      src='images/cover.jpg'
+      src='images/mainPage.jpg'
       alt='Defaul image'
       css={{mw:"100%"}}
       showSkeleton
     />
+
 
     {/* <ImageLoader
 
