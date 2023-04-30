@@ -46,8 +46,8 @@ export default function Experience() {
 
                     <Table.Row >
                         <Table.Cell>
-                        01.2022 - 03.2023
-                        <Text color="primary">{calculation(1, 2022, 3, 2023)} <Text span color="success">(now)</Text></Text>
+                        01.2021 - 03.2023
+                        <Text color="primary">{calculation(1, 2021, 3, 2023)} <Text span color="success">(now)</Text></Text>
                         </Table.Cell>
                         <Table.Cell>PUSK LTD</Table.Cell>
                         <Table.Cell>Manual QA Tester</Table.Cell>
