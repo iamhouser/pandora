@@ -7,7 +7,7 @@ export const downloadFile = async (fileName) => {
     const response = await fetch(fileUrl, {
         headers: {
             'Content-Type': 'application/pdf, charset=utf-8',
-            'Content-Disposition': 'attachment; filename="final.pdf"'
+            'Content-Disposition': 'attachment; filename="Evgeny_Domnin_QA.pdf"'
         }
     });
     const blob = await response.blob()
@@ -24,7 +24,7 @@ export const downloadFile = async (fileName) => {
 
 export default function ResumeButton () {
     const handleDownload = () => {
-        downloadFile('final.pdf');
+        downloadFile('Evgeny_Domnin_QA.pdf');
     }
     return (
         <Button size={"sm"} onClick={handleDownload} shadow auto >Download .pdf</Button>
